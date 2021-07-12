@@ -1,6 +1,10 @@
 ###
-https://github.com/ministori-yonsei/green_07
-https://codepen.io/ministori-yonsei/pen/VwbabLW?editors=1000 
+> https://github.com/ministori-yonsei/green_07
+
+> https://codepen.io/ministori-yonsei/pen/VwbabLW?editors=1000 
+
+### 단축키
+주석 달기 : Ctrl + /
 
 # 프론트 엔드 개발
 
@@ -20,7 +24,7 @@ https://codepen.io/ministori-yonsei/pen/VwbabLW?editors=1000
 
 > HTML - Hyper Text Markup Language
 > 
-> 웹페이지에 구성 요소를 표시하는 언어
+> 웹페이지에 구성 요소를 표시하는 언어 (Markup , 표시만 하고 끝 동작x 제어x)
 > 
 > 구성 요소 : 콘텐츠, 구조
 
@@ -185,6 +189,8 @@ https://codepen.io/ministori-yonsei/pen/VwbabLW?editors=1000
 root 상대경로
 <img src="/images/picture.jpg">
 ```
+> root를 특정 폴더로 정하는 방법?
+
 
 ### Block/Inline Element
 > 화면에 표시되는 형태를 기준으로 구분하는 방식
@@ -226,16 +232,90 @@ root 상대경로
 ### 인터넷 주소체계
 
 > IP address : 192.168.0.1
+> 
 > Domain address : https://www.naver.com
+> 
 > - 기본주소(IP) => 의미있는 영어단어로 변환 : 도메인 주소
-> www.naver.com/images/picture.jpg => URL
+> - 도메인 + 경로주소 => URL 
+> 
+> ex) www.naver.com/images/picture.jpg 
 
 # CSS
-: Cascading Style Sheets
-: 마지막 입력 내용이 반영
 
-Syntax : 문법
+> - Cascading Style Sheets
+> - Cascading : 나중에 선언한 것이 최종 반영되는 CSS 특징
+
+> CS Syntax (문법)
+> 
+> - selector(선택자) 와 declaration block(선언블록)으로 구성
+> - 선언블록은 { } 안의 여러 선언을 포함
+> - 각 선언에는 property와 value로 구성
+
 
 ```
 h1 {color:blue; font-size:21px;}
 ```
+
+Internal 웬만해선 사용 x
+
+
+JS는 CSS 컨트롤이 불가하여 Inline으로 제어
+
+### class, ID
+
+> HTML element에 대해서 이름을 지정해줄 때 사용하는 attibute
+> 
+> class
+> 
+> - 여러개의 HTML element에 같은 클래스 이름을 사용할 수 있음
+> 
+> - 한 개의 HTML element에 여러개의 클래스 이름을 사용할 수 있음
+> 
+> id
+> 
+> - id 이름은 HTML 문서내에서 고유해야함(한 개만 존재)\
+> 
+> - 한 개의 HTML element에 한 개의 id 이름만 사용할 수 있음 
+
+>>> !! ID는 고유해야함 
+> : ID도 중복 가능은 함 but, 논리적 문제 발생(서버에서 정확한 곳에만 데이터를 보내지 못함)
+> : 서버개발에서 id 사용 많음
+> 
+
+
+```
+<div class="box box1 box2"></div>
+<div class="box box1 box2"></div>
+<div class="box box1 box2"></div>
+
+<div id="title1"></div>
+<div id="title2"></div>
+<div id="title3"></div>
+```
+
+### Naming (표기 방식)
+
+- 한 단어로 Naming 하는 것은 한계가 있기 때문에, 여러 단어로 Naming 필요
+- 단어와 단어 사이 구분 필요하나, 일반 문서처럼 띄어쓰기로 구분 불가.
+- 따라서, 단어와 단어 사이를 기호나 규칙으로 띄어쓰지 않고 구분하는 방법을 '표기방식'이라 함
+-
+> 표기방식 종류
+> - Snake case(underbar/underscore) : gnb_list_item => file/folder 에 사용
+> - Kebab case(hyphen/dash) : gnb-list-item => id/class 에 사용
+> - Camel case : gnbListItem => javascript 변수/함수 이름 정할 때 사용
+> - Pascal case : GnbListItem => javascript의 class 이름 지정 시 사용
+
+> -- 프로그래밍에서는 snake, kebab 사용 X
+> -- 파이썬에서는 snake case 사용
+> -- 객체 지향 언어는 class 개념이 있음
+
+> -- 프론트엔드 자동화 툴
+> --- CSS 전처리기 (ex) Sass, Less, Stylus)
+> --- : Sass 에서 Snake case 사용해야 
+
+
+> 코딩 컨벤션
+> : 조직별로 네이밍 규칙을 갖고 있음
+
+
+
