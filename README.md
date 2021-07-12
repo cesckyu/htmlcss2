@@ -277,11 +277,9 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 > 
 > - 한 개의 HTML element에 한 개의 id 이름만 사용할 수 있음 
 
->>> !! ID는 고유해야함 
+> ! ID는 고유해야함 
 > : ID도 중복 가능은 함 but, 논리적 문제 발생(서버에서 정확한 곳에만 데이터를 보내지 못함)
 > : 서버개발에서 id 사용 많음
-> 
-
 
 ```
 <div class="box box1 box2"></div>
@@ -301,7 +299,7 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 -
 > 표기방식 종류
 > - Snake case(underbar/underscore) : gnb_list_item => file/folder 에 사용
-> - Kebab case(hyphen/dash) : gnb-list-item => id/class 에 사용
+> - Kebab case(hyphen/dash) : gnb-list-item => HTML의 id/class 에 사용
 > - Camel case : gnbListItem => javascript 변수/함수 이름 정할 때 사용
 > - Pascal case : GnbListItem => javascript의 class 이름 지정 시 사용
 
