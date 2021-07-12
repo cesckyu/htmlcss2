@@ -27,6 +27,7 @@
 > 웹페이지에 구성 요소를 표시하는 언어 (Markup , 표시만 하고 끝 동작x 제어x)
 > 
 > 구성 요소 : 콘텐츠, 구조
+> 
 
 ## HTML 기본구조
 
@@ -189,7 +190,7 @@
 root 상대경로
 <img src="/images/picture.jpg">
 ```
-> root를 특정 폴더로 정하는 방법?
+> root를 특정 폴더로 정하는 방법??????????????????????????????????????????????????
 
 
 ### Block/Inline Element
@@ -303,18 +304,19 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 > - Camel case : gnbListItem => javascript 변수/함수 이름 정할 때 사용
 > - Pascal case : GnbListItem => javascript의 class 이름 지정 시 사용
 
-> 추가
+> 참고
 > - 프로그래밍에서는 snake, kebab 사용 X
 > - 파이썬에서는 snake case 사용
 > - 객체 지향 언어는 class 개념이 있음
 
-> 프론트엔드 자동화 툴
+> - 프론트엔드 자동화 툴
 > - CSS 전처리기 (ex) Sass, Less, Stylus)
-> : Sass 에서 Snake case 사용해야 
+> : Sass 에서 Snake case (ex: gnb-list-item) 사용해야 &- 
 
 
 > 코딩 컨벤션
 > : 조직별로 네이밍 규칙을 갖고 있음
 
-
+> OOCSS 이론
+> - 모든 태그에 이름 부여하여 대상화
 
