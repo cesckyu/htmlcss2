@@ -305,17 +305,17 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 > - Pascal case : GnbListItem => javascript의 class 이름 지정 시 사용
 
 > 참고
+> - 코딩 컨벤션 : 조직별로 네이밍 규칙을 갖고 있음
 > - 프로그래밍에서는 snake, kebab 사용 X
 > - 파이썬에서는 snake case 사용
 > - 객체 지향 언어는 class 개념이 있음
 
-> - 프론트엔드 자동화 툴
-> - CSS 전처리기 (ex) Sass, Less, Stylus)
-> : Sass 에서 Snake case (ex: gnb-list-item) 사용해야 &- 
+>   - 프론트엔드 자동화 툴
+>   - CSS 전처리기 (ex) Sass, Less, Stylus)
+>   - : Sass 에서 Snake case (ex: gnb-list-item) 사용해야 &- 
 
 
-> 코딩 컨벤션
-> : 조직별로 네이밍 규칙을 갖고 있음
+> 
 
 > OOCSS 이론
 > - 모든 태그에 이름 부여하여 대상화
@@ -334,4 +334,28 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 > - RGB 색상 표현 값
 >   - 16진수 : #0FAB78
 >   - 10진수 : (255, 100, 121) ※숫자범위 : 0~255
+
+### Text CSS
+
+> color
+> - value : #000000(black), #ffffff(white) rgb(255, 255, 255)(white)
+> text-align : left, center, right, justify;
+> text-decoration : underline, line-through, overline, none;
+> text-indent : 50px(들여쓰기), -50px(내어쓰기)
+> letter-spacing : 3px, -3px(사이가 좁아짐)
+> line-height : 24px or 1.6
+> word-spacing
+> white-space : nowrap (줄바꿈 없애기)\
+
+### Font CSS
+
+> font-family : 'Times New Roman' (띄어쓰기가 있는 경우 ''로 묶어 하나임을 의미), Times, serif;
+> - font fallback : 렌더링 시 폰트가 없는 경우 다른 폰트로 대비
+> - web safe : 웹 페이지가 표시될 때 의도한 폰트가 제대로 보이도록 선택
+> - web font : 사용자 클라이언트가 아아닌 서버에서 폰트를 찾도로 하는 방법
+> - google font : 웹 폰트를 사용하도록 도와주는 서비스
+> - 눈누 : 한글 웹폰트 서비스
+> font-weight : normal(regular:400), bold(700);
+> font-size : 20px;
+> font-style : italic
 
