@@ -450,10 +450,15 @@ div{
 > float : left, right => 부모요소 왼/오른쪽 기준으로 배치
 
 > float 배치 시 위아래 인접 박스들이 위로 올라감
-> 하단 인접 박스에 clear : both 설정 시 위로 올라가지 안흥ㅁ
+> 
+> 하단 인접 박스에 clear : both 설정 시 위로 올라가지 않음
+> 
 > but, float 박스는 계속 떠 있는 상태이므로, margin 적용 문제가 발생
 
-> - 해결책 : float 박스를 <div>(부모)로 감싸주고, float박스 아래에 <div>박스 추가 후 clear: both 적용
+> - 해결책 : float 박스를 <div>(부모)로 감싸주고, 
+  
+  float박스 아래에 <div>박스 추가 후 clear: both 적용
+  
   float 박스 외 위아래 인접 박스들은 float 박스 부모요소와 인접관계가 되기 때문에 float과 상관 없어짐
   
   ```
