@@ -359,3 +359,26 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 > font-size : 20px;
 > font-style : italic
 
+### Box Model
+> HTML Element에는 기본 영역이 존재하며, 여기에 CSS 요소를 적용할 수 있음
+> - Content 영역
+> - padding / border / margin
+
+### width / height
+
+> width
+> - 기본 속성 : Block 요소는 부모요소에 맞춰지며, Inline 요소는 자식요소에 맞춰짐
+> height
+> - 기본 속성 : Block, Inline 모두 자식요소에 맞춰짐 
+> 단위
+> - px : 지정된 수치값으로 고정
+> - % : 부모요소 기준 일정 비율로 크기 정해짐
+>   - Inline 요소의 경우 px, % 단위 적용 불가
+
+### Padding
+
+> 축약표현
+> - padding:20px; : 모든 방향
+> - padding:20px 30px; : top/bottom right/left
+> - padding:20px 30px 40px : top right/left bottom
+> - padding:10px 20px 30px 40px : top right bottom left
