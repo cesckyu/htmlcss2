@@ -427,3 +427,47 @@ div{
   box-sizing: border-box;
 }
 ```
+
+### Block, Inline에 박스모델 적용
+> Block : 박스모델의 모든 요소가 적용 가능 Inline : 박스모델의 width/height, 상하 margin 이 제대로 적용되지 않음
+
+### Display 속성
+
+> 박스(영역)의 block, inline 속성을 변형
+
+> display : inline -> 박스 속성 inline으로 변형
+> display : block -> 박스 속성 block으로 변형
+> display : inline-block -> inline, block 두 가지 특징 가짐
+
+### 가로 배치 방법
+
+- float
+- flex
+- grid
+-
+## Float
+> 박스를 띄워 좌우 배치
+> float : left, right => 부모요소 왼/오른쪽 기준으로 배치
+
+> float 배치 시 위아래 인접 박스들이 위로 올라감
+> 하단 인접 박스에 clear : both 설정 시 위로 올라가지 안흥ㅁ
+> but, float 박스는 계속 떠 있는 상태이므로, margin 적용 문제가 발생
+
+> - 해결책 : float 박스를 <div>(부모)로 감싸주고, float박스 아래에 <div>박스 추가 후 clear: both 적용
+  float 박스 외 위아래 인접 박스들은 float 박스 부모요소와 인접관계가 되기 때문에 float과 상관 없어짐
+  
+  ```
+  <div class="float-parent"
+       <div class="float-box"> Text</div>
+       <div class="clearfix"></div>
+  </div>
+  
+  CSS
+   .float-box{
+    float:left;
+    }
+    
+   .clearfix{
+    clear: both;
+    }
+  ```
