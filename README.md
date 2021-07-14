@@ -378,7 +378,52 @@ JS는 CSS 컨트롤이 불가하여 Inline으로 제어
 ### Padding
 
 > 축약표현
-> - padding:20px; : 모든 방향
-> - padding:20px 30px; : top/bottom right/left
-> - padding:20px 30px 40px : top right/left bottom
-> - padding:10px 20px 30px 40px : top right bottom left
+> - padding: 20px; : 모든 방향
+> - padding: 20px 30px; : top/bottom right/left
+> - padding: 20px 30px 40px : top right/left bottom
+> - padding: 10px 20px 30px 40px : top right bottom left
+
+### Margin
+
+> Margin Collapse 마진 겹침
+> - 위아래로 연이어 박스가 배치될 때 큰 수치의 margin만 표시됨
+
+### border
+
+> border
+
+> width, style, color
+> top, right, bottom, left
+
+```
+border : 1px solid #fff;    4방향
+ 
+border-top : 1px solid #fff; 
+
+-> *색이 같을 때 축약 가능 #aa5500 = #a50
+```
+
+### 박스 모델 크기 계산
+
+> width/height, pading, border, margin는 모두 별개 요소
+
+> Ex) 박스 전체너비가 300px이고 padding이 20px, border 1px, margin 30px라면
+```
+div{
+  padding : 20px;
+  border : 1px solid #fff;
+  margin : 30px;
+  width : ???? = 258px;
+}
+```
+
+> box-sizing: border-box; (기본값 : content-box) 설정 시
+
+```
+  padding : 20px;
+  border : 1px solid #fff;
+  margin : 30px;
+  width : 300px;
+  box-sizing: border-box;
+}
+```
