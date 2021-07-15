@@ -520,8 +520,9 @@ div::after{
 
 > Alpha : 추가 색
 > - rgba() 함수로 사용 : 색투명도에만 적용(글씨는 그대로)
-> Opacity : 불투명한
->- 
+  
+> opacity : 불투명한
+> - Element(요소)에 투명도 적용 
 
 
 ```
