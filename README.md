@@ -445,8 +445,9 @@ div{
 - float
 - flex
 - grid
--
+
 ## Float
+
 > 박스를 띄워 좌우 배치
 > float : left, right => 부모요소 왼/오른쪽 기준으로 배치
 
@@ -460,29 +461,22 @@ div{
   
   float박스 아래에 <div>박스 추가 후 clear: both 적용
   
-  float 박스 외 위아래 인접 박스들은 float 박스 부모요소와 인접관계가 되기 때문에 float과 상관 없어짐
-  
+  float 박스 외 위아래 인접 박스들은 float 박스 부모요소와 인접관계가 되기 때문에 float과 float과 상관없어짐
 ```
-  <div class="float-parent"
-      <div class="float-box"> Text</div>
-      <div class="clearfix"></div>
-  </div>
-  ```
-  
-  
-  ```
- CSS
- .float-box{
- float: left;
- }
-    
- .clearfix{
- clear: both;
- }
- ```
- ```
- ```
- ```
+HTML
+<div class="float-parent">
+  <div class="float-box">Text</div>
+  <div class="clearfix"></div>
+</div>
+
+CSS
+.float-box{
+  float:left;
+}
+.clearfix{
+  clear:both;
+}
+```
   
 ### 가상 클래스(Pseudo Class)
 
