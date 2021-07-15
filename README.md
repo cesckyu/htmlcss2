@@ -462,7 +462,7 @@ div{
   
   float 박스 외 위아래 인접 박스들은 float 박스 부모요소와 인접관계가 되기 때문에 float과 상관 없어짐
   
-  ```
+```
   <div class="float-parent"
        <div class="float-box"> Text</div>
        <div class="clearfix"></div>
@@ -476,7 +476,6 @@ div{
    .clearfix{
     clear: both;
     }
-    ```
   
   
 ### 가상 클래스(Pseudo Class)
@@ -485,7 +484,7 @@ div{
 
 > 여러 요소 중 특정 요소를 지정
 
-```
+
 상태 정의
 
 a:link{
