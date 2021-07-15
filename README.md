@@ -467,7 +467,8 @@ div{
        <div class="float-box"> Text</div>
        <div class="clearfix"></div>
   </div>
-  
+```
+```
   CSS
    .float-box{
     float:left;
