@@ -464,10 +464,12 @@ div{
   
 ```
   <div class="float-parent"
-       <div class="float-box"> Text</div>
-       <div class="clearfix"></div>
+      <div class="float-box"> Text</div>
+      <div class="clearfix"></div>
   </div>
   ```
+  
+  
   ```
  CSS
  .float-box{
@@ -476,9 +478,11 @@ div{
     
  .clearfix{
  clear: both;
- }```
+ }
  ```
-  ```
+ ```
+ ```
+ ```
   
 ### 가상 클래스(Pseudo Class)
 
@@ -488,7 +492,7 @@ div{
 
 
 상태 정의
-
+```
 a:link{
   color:red;
   }
@@ -496,7 +500,7 @@ a:link{
  a:visited{
  color:blue;
  }
- 
+ ```
  
 ### 가상 요소(Pseudo Element)
 
@@ -518,10 +522,13 @@ div::after{
 ### 투명도
 
 > Transparent : 투명한
-
-> Opacity : 불투명한
+> - 투명색 적용
 
 > Alpha : 추가 색
+> - rgba() 함수로 사용 : 색투명도에만 적용(글씨는 그대로)
+> Opacity : 불투명한
+>- 
+
 
 ```
 div{
@@ -540,3 +547,4 @@ background-color:rgb(255,255,255); /* rgb() : rgb 함수 */
 div{
   background-color:rgba(255,255,255,0.6); /* a : alpha
 
+```
