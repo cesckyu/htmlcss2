@@ -476,10 +476,10 @@ div{
     
  .clearfix{
  clear: both;
- }
+ }```
+ ```
   ```
- 
-
+  
 ### 가상 클래스(Pseudo Class)
 
 > 선택자(요소)의 상태를 정의
@@ -517,6 +517,26 @@ div::after{
 
 ### 투명도
 
-> Transparent
-> Opacity
-> alpha
+> Transparent : 투명한
+
+> Opacity : 불투명한
+
+> Alpha : 추가 색
+
+```
+div{
+  background-color: transparent;
+  }
+ 
+ div{
+  opacity: 0.7;(0.0~1.0)
+  }
+  
+  div{
+background-color:rgb(255,255,255); /* rgb() : rgb 함수 */
+}
+
+
+div{
+  background-color:rgba(255,255,255,0.6); /* a : alpha
+
