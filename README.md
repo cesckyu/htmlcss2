@@ -467,18 +467,17 @@ div{
        <div class="float-box"> Text</div>
        <div class="clearfix"></div>
   </div>
-```
-
-CSS
-> .float-box{
-> float: left;
-> }
+ CSS
+ .float-box{
+ float: left;
+ }
     
-> .clearfix{
-> clear: both;
-> }
+ .clearfix{
+ clear: both;
+ }
   
-  
+ 
+
 ### 가상 클래스(Pseudo Class)
 
 > 선택자(요소)의 상태를 정의
@@ -497,3 +496,25 @@ a:link{
  }
  
  
+### 가상 요소(Pseudo Element)
+
+> HTML에 직접 입력하는 것이 아닌 CSS에서 렌더링 시 생성되는 가상 요소
+
+```
+div::before{
+  content: "Hello World";
+  }
+  
+div::after{
+  content: "";
+  display: block;
+  width:100px;
+  height:30px;
+  }
+```
+
+### 투명도
+
+> Transparent
+> Opacity
+> alpha
