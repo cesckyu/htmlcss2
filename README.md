@@ -468,14 +468,14 @@ div{
        <div class="clearfix"></div>
   </div>
 ```
-```
-  CSS
-   .float-box{
-    float:left;
-    }
+
+CSS
+  .float-box{
+    float: left;
+   }
     
    .clearfix{
-    clear: both;
+      clear: both;
     }
   
   
