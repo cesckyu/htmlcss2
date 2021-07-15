@@ -470,13 +470,13 @@ div{
 ```
 
 CSS
-  .float-box{
-    float: left;
-   }
+> .float-box{
+> float: left;
+> }
     
-   .clearfix{
-      clear: both;
-    }
+> .clearfix{
+> clear: both;
+> }
   
   
 ### 가상 클래스(Pseudo Class)
