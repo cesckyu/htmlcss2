@@ -446,22 +446,17 @@ div{
 - flex
 - grid
 
-## Float
+### float
 
-> 박스를 띄워 좌우 배치
-> float : left, right => 부모요소 왼/오른쪽 기준으로 배치
+> 박스를 부유시켜서 좌우배치를 할 수 있게 함
+> float:left, float:right 부모 요소의 왼쪽/오른쪽을 기준으로 배치,순서 적용
 
-> float 배치 시 위아래 인접 박스들이 위로 올라감
-> 
-> 하단 인접 박스에 clear : both 설정 시 위로 올라가지 않음
-> 
-> but, float 박스는 계속 떠 있는 상태이므로, margin 적용 문제가 발생
+> float으로 배치시 박스가 띄워지기 때문에 위아래 인접 관계 박스들의 레이아웃이 위로 올라감
+> float 박스의 하단 박스에 clear:both 를 적용하면 위로 올라가지 않음
+> float 박스는 계속 띄워져 있기 때문에 margin 적용 같은 문제가 발생할 수 있음
 
-> - 해결책 : float 박스를 <div>(부모)로 감싸주고, 
-  
-  float박스 아래에 <div>박스 추가 후 clear: both 적용
-  
-  float 박스 외 위아래 인접 박스들은 float 박스 부모요소와 인접관계가 되기 때문에 float과 float과 상관없어짐
+> float 박스를 부모요소로 감싸주고 float박스 하단에 높이 0 짜리 박스를 추가해서 clear:both를 적용
+> float 박스와 위아래 인접관계에 있던 박스들은 float 박스의 부모요소와 인접관계가 되기 때문에 float과 상관없어짐
 ```
 HTML
 <div class="float-parent">
@@ -477,7 +472,7 @@ CSS
   clear:both;
 }
 ```
-  
+
 ### 가상 클래스(Pseudo Class)
 
 > 선택자(요소)의 상태를 정의
@@ -590,3 +585,52 @@ div{
 ### flex
 css 상속
 background 이미지 처리 2번째
+  
+### CSS 상속
+  > CSS는 html element의 부모요소에 적용된 css 속성은 자식요소에도 적용
+  > 상속되는 css property를 활용하면 코드 길이를 줄일 수 있음
+  
+  
+### 반응형 웹
+> OSMU : One Source Multi Use
+> => One Source : HTML sourse
+> => Multi Use : CSS source
+
+> 해상도
+> - 모바일 실제 해상도와 CSS 해상도 구분
+
+> @media 
+```
+@media screen and (해상도 범위){
+  해당 해상도의 스타일 설정
+}
+```
+> 해상도 범위, 변경점(break point)
+> - 변경점의 기준 해상도 설정 필요
+>   - 모바일 : 360px ~ 480px(640px)
+>   - 태블릿 : 720px ~ 1024px
+>   - PC : 1024px
+
+```
+닫힌 범위--> XXX 위와 같이 사용하지 않음!
+@media screen and (min-width:360px) and (max-width:480px){  }
+@media screen and (min-width:720px) and (max-width:1024px){  }
+@media screen and (min-width:1024px) {  }
+  
+열린 범위
+/* PC CSS*/
+div{font-size:15px;}
+
+/* Tablet CSS */
+@media screen and (max-width:1024px){ 
+div{font-size:13px;}
+}
+
+/* Smartphone CSS */
+@media screen and (max-width:640px){
+div{font-size:10px;}
+}
+
+
+
+```
