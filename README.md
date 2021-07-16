@@ -515,31 +515,78 @@ div::after{
 
 ### 투명도
 
-> Transparent : 투명한
+> transparent : 투명한
 > - 투명색 적용
-
-> Alpha : 추가 색
-> - rgba() 함수로 사용 : 색투명도에만 적용(글씨는 그대로)
-  
+> 
+> alpha : 추가색
+> - rgba() 함수 사용 : color에만 투명도 적용
+> 
 > opacity : 불투명한
-> - Element(요소)에 투명도 적용 
+> - Element(요소)에 투명도 적용
 
 
 ```
 div{
-  background-color: transparent;
-  }
- 
- div{
-  opacity: 0.7;(0.0~1.0)
-  }
-  
-  div{
-background-color:rgb(255,255,255); /* rgb() : rgb 함수 */
+  background-color:transparent;
 }
 
+div{
+  opacity:0.7;(0.0 ~ 1.0)
+}
 
 div{
-  background-color:rgba(255,255,255,0.6); /* a : alpha
+  background-color:rgb(255,255,255); /* rgb() : rgb함수 */
+}
+
+div{
+  background-color:rgba(255,255,255,0.6); /* a : alpha (0.0 ~ 1.0) */
+}
 
 ```
+
+### 배경이미지
+
+> background-image
+> - 배경이미지 표현
+> - 배경이미지가 반복되어 영역을 모두 채움(기본속성)
+
+> backgroud-repeat
+> - repeat-x : x 방향으로만 반복
+> - repeat-y : y 방향으로만 반복
+> - no-repeat : 반복 없음
+
+> background-position
+> - left, center, right
+> - top, center, bottom
+```
+div{
+  background-position:100px 200px; /* 앞:가로방향, 뒤:세로방향 */
+}
+```
+
+> background-attachment
+> - 배경 고정
+```
+div{
+  background-attachment:fixed;
+}
+```
+※ 배경색, 배경이미지 모두 content영역과 padding 영역에 적용됨(border, margin에는 적용이 안됨)
+
+### 이미지 표현 방법
+
+> 콘텐트로 표현
+> - img 태그로 표현
+> 
+> 디자인요소로 표현
+> - background로 표현
+
+> IR(Image Replacement) 기법
+> - 화면에 표시는 이미지로 표시, 실제 콘텐트는 텍스트의 형태
+
+> 가상요소를 사용해서 배경표현 기법
+> - 가상요소에 디자인 이미지를 적용해서 화면에 표시
+
+### flex
+css 상속
+background 이미지 처리 2번째
