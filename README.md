@@ -693,3 +693,10 @@ car.drive();
 > 조상요소 : parent() 부모요소 / parents() 조상요소(부모 포함)
 > 자손요소 : children() 자식요소 / find() 자손요소(자식 포함)
 > gudwpdyth : siblings() 형제요소 모두 / prev() (바로 위), next() (바로 아래)  인접한 형제요소
+
+
+### this
+> 현재 요소/대상을 지정
+> Ex) <p> 태그에 이벤트 발생 => this : 이벤트가 발생한 대상
+  
+  ![image](https://user-images.githubusercontent.com/83571281/126125244-240e584b-03cb-4003-bc2a-dcb3a4142718.png)
