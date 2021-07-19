@@ -671,4 +671,25 @@ car.drive();
 ### jQuery
 
 > JavaScript를 좀 더 간편하고 유연하게 사용하도록 만들어진 라이브러리
-> 
+ 
+### Event
+
+> 상황 변화에 따라 발생되는 신호
+
+> Event 발생 시 동작 구분
+> - 이벤트에 따른 신호 발생
+>   - 이벤트 종류
+>     - javaScript : onchange, onclick, onmouseover, onmouseout, onkeydown => click, mouseover, mouseout 으로 변경됨
+>     - jQuery : click, mouseenter, mouseleave...  
+> - 발생된 신호를 감지해서 해당 기능 실행
+>   - object.onclick = 함수 이름
+>   - object.addEventListener('이벤트', 실행함수); => 이때 사용되는 이벤트 : click, mouseover, mouseout...
+>   - $(object).on('이벤트', 실행함수);
+
+### 요소 탐색
+
+> 기준이 되는 요소를 찾은 후 여러 단계를 통해 실제 요소를 탐색
+
+> 조상요소 : parent() 부모요소 / parents() 조상요소(부모 포함)
+> 자손요소 : children() 자식요소 / find() 자손요소(자식 포함)
+> gudwpdyth : siblings() 형제요소 모두 / prev() (바로 위), next() (바로 아래)  인접한 형제요소
