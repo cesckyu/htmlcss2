@@ -697,6 +697,7 @@ car.drive();
 
 ### this
 > 현재 요소/대상을 지정
-> Ex) <p> 태그에 이벤트 발생 => this : 이벤트가 발생한 대상
+> Ex) <p> 태그에 이벤트 발생 => this (이벤트가 발생한 대상) => <p>태그가 this가 됨
   
   ![image](https://user-images.githubusercontent.com/83571281/126125244-240e584b-03cb-4003-bc2a-dcb3a4142718.png)
+
